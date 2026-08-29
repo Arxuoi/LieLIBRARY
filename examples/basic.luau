@@ -1,0 +1,6 @@
+local Breeze = require(game.ReplicatedStorage.Breeze)
+local window = Breeze:CreateWindow({ Title = "Breeze", Subtitle = "Basic example" })
+local home = window:AddTab({ Title = "Home", Icon = "home" })
+local general = home:AddSection({ Title = "General" })
+general:AddButton({ Title = "Run", Description = "Runs an action", Callback = function() print("Run") end })
+general:AddToggle({ Title = "Enabled", Flag = "Enabled", Default = false })

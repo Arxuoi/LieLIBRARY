@@ -1,0 +1,10 @@
+{
+  "name": "Breeze",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Breeze": { "$path": "src" }
+    }
+  }
+}

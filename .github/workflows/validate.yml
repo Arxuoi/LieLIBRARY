@@ -1,0 +1,10 @@
+name: Validate
+on: [push, pull_request]
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Roblox/setup-foreman@v1
+        with: { token: "${{ secrets.GITHUB_TOKEN }}" }
+      - run: python tests/static_check.py
